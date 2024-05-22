@@ -12,7 +12,7 @@ const w = [
     [0,4,8],
     [1,4,7],
     [2,8,5],
-    [3,4,6],
+    [2,4,6],
     [3,4,5],
     [6,7,8],
 ];
@@ -67,9 +67,9 @@ x.forEach((p) => {
 
 const checkwinner = () => {
   for(let r of w){  
-        let pos1val = x[r[0]].innerText;
-        let pos2val = x[r[1]].innerText;
-        let pos3val = x[r[2]].innerText;
+      let pos1val = x[r[0]].innerText;
+      let pos2val = x[r[1]].innerText;
+      let pos3val = x[r[2]].innerText;
        if(pos1val !="" && pos2val != "" && pos3val != ""){
         if(pos1val === pos2val && pos2val === pos3val){
             console.log("winner", pos1val);
